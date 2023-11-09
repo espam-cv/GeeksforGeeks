@@ -2,53 +2,95 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formulario de GeeksforGeeks</title>
-  <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de GeeksforGeeks</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
 <body>
-  <h1>Formulario de GeeksforGeeks</h1>
-  <form id="formulario">
-    <div class="form-control">
-      <label for="nombre" id="etiqueta-nombre"> Nombre </label>
-      <input type="text" id="nombre" placeholder="Ingrese su nombre" required />
-    </div>
-    <div class="form-control">
-      <label for="correo" id="etiqueta-correo"> Correo Electrónico </label>
-      <input type="email" id="correo" placeholder="Ingrese su correo electrónico" />
-    </div>
-    <div class="form-control">
-      <label for="edad" id="etiqueta-edad"> Edad </label>
-      <input type="number" id="edad" required placeholder="Ingrese su edad" />
-    </div>
-    <div class="form-control">
-      <label for="rol" id="etiqueta-rol">
-        ¿Cuál opción mejor le describe?
-      </label>
-      <select name="rol" id="rol">
-        <option selected="">Elija una opcion</option>
-        <option value="estudiante">Estudiante</option>
-        <option value="profesional">Profesional</option>
-        <option value="otro">Otro</option>
-      </select>
-    </div>
-    <div class="form-control">
-      <label>
-        ¿Recomendaría GeeksforGeeks a un amigo?
-      </label>
-      <label for="recomendar-1">
-        <input type="radio" id="recomendar-1" name="recomendar">Sí</input>
-      </label>
-      <label for="recomendar-2">
-        <input type="radio" id="recomendar-2" name="recomendar">No</input>
-      </label>
-      <label for="recomendar-3">
-        <input type="radio" id="recomendar-3" name="recomendar">Tal vez</input>
-      </label>
-    </div>
-  </form>
+    <h1>Formulario de GeeksforGeeks</h1>
+    <form id="formulario">
+        <div class="form-control">
+            <label for="nombre" id="etiqueta-nombre"> Nombre </label>
+            <input type="text" id="nombre" placeholder="Ingrese su nombre" required />
+        </div>
+        <div class="form-control">
+            <label for="correo" id="etiqueta-correo"> Correo Electrónico </label>
+            <input type="email" id="correo" placeholder="Ingrese su correo electrónico" />
+        </div>
+        <div class="form-control">
+            <label for="edad" id="etiqueta-edad"> Edad </label>
+            <input type="number" id="edad" required placeholder="Ingrese su edad" required />
+        </div>
+        <div class="form-control">
+            <label for="rol" id="etiqueta-rol">
+                ¿Cuál opción mejor le describe?
+            </label>
+            <select name="rol" id="rol">
+                <option selected="">Elija una opcion</option>
+                <option value="estudiante">Estudiante</option>
+                <option value="profesional">Profesional</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="form-control">
+            <label>
+                ¿Recomendaría GeeksforGeeks a un amigo?
+            </label>
+            <label for="recomendar-1">
+                <input type="radio" id="recomendar-1" name="recomendar">Sí</input>
+            </label>
+            <label for="recomendar-2">
+                <input type="radio" id="recomendar-2" name="recomendar">No</input>
+            </label>
+            <label for="recomendar-3">
+                <input type="radio" id="recomendar-3" name="recomendar">Tal vez</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label>Frameworks conocidos
+                <small>(Marque todos los que apliquen)</small>
+            </label>
+            <label for="inp-1">
+                <input type="checkbox" name="inp">C</input>
+            </label>
+            <label for="inp-2">
+                <input type="checkbox" name="inp">C++</input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" name="inp">C#</input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" name="inp">Java</input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" name="inp">Python</input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" name="inp">JavaScript</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">React</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Angular</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Django</input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" name="inp">Spring</input>
+            </label>
+        </div>
+        <div class="form-control">
+            <label for="comentario">
+                Comentarios o sugerencias
+            </label>
+            <textarea name="comentario" id="comentario" placeholder="Ingrese su comentario aquí">
+            </textarea>
+        </div>
+    </form>
 </body>
 <footer>
   <div class="container">
